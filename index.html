@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="IRCLogViewer">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <!-- Theme Color - Chrome/Android theme color -->
+        <meta name="theme-color" content="#3c6994">
+
+        <title>IRC Log Viewer</title>
+
+        <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="static/css/styles.css" />
+
+        <!-- Base URL for AngularJS's HTML5 URL system -->
+        <base href="/">
+    </head>
+    <body>
+        <header>
+
+        </header>
+
+        <main>
+            <ng-view></ng-view>
+        </main>
+        <!-- Javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.min.js"></script>
+
+        <script defer src="static/js/main.js"></script>
+        <script defer src="static/js/app.js"></script>
+    </body>
+</html>
