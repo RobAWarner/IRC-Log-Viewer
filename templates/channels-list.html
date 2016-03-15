@@ -1,0 +1,18 @@
+<ng-include ng-if="data.loading" src="'templates/preloader.html'"></ng-include>
+
+<div class="row">
+    <div class="col s12 m6 l3" ng-repeat="channel in data.channels">
+        <div class="card z-depth-1 app-card">
+            <div class="card-content">
+                <h4 class="app-card-title text-capitalize">
+                    <a ng-href="#!/{{channel.url}}" class="app-card-title-prefix app-prefix-hash app-color-{{channel.colorClassNum}}">{{channel.prefix}}</a>
+                    <a ng-href="#!/{{channel.url}}">{{channel.display_name}}</a>
+                </h4>
+            </div>
+            <div class="card-action">
+                <a ng-href="#!/{{channel.url}}" class="indigo-text text-accent-3">View Logs</a>
+                <span class="right blue-text">{{channel.log_count | number:0}}&nbsp;<i class="material-icons">chat</i></span>
+            </div>
+        </div>
+    </div>
+</div>

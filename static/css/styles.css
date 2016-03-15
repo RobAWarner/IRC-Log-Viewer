@@ -1,0 +1,133 @@
+/* Make life easier */
+* {
+    box-sizing: border-box;
+}
+
+* > h4:first-child {
+    margin-top: 0px !important;
+}
+* > h4:last-child {
+    margin-bottom: 0px !important;
+}
+
+
+/* Helpers */
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.block-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Vertical center material icons */
+.material-icons {
+    vertical-align: middle;
+}
+
+/* App Colours */
+.app-color-1 {background-color: #f16364 !important;}
+.app-color-2 {background-color: #f58559 !important;}
+.app-color-3 {background-color: #f9a43e !important;}
+.app-color-4 {background-color: #ffcf40 !important;}
+.app-color-5 {background-color: #59a2be !important;}
+.app-color-6 {background-color: #67bf74 !important;}
+.app-color-7 {background-color: #2093cd !important;}
+.app-color-8 {background-color: #ad62a7 !important;}
+
+/* IRC Colours */
+.irc-c {color: #000;}
+.irc-c00 {color: #eee;}
+.irc-c01 {color: #000;}
+.irc-c02 {color: #009;}
+.irc-c03 {color: #0C0;}
+.irc-c04 {color: #f00;}
+.irc-c05 {color: #600;}
+.irc-c06 {color: #c0f;}
+.irc-c07 {color: #f90;}
+.irc-c08 {color: #ff0;}
+.irc-c09 {color: #3f0;}
+.irc-c10 {color: #0f9;}
+.irc-c11 {color: #0ff;}
+.irc-c12 {color: #00f;}
+.irc-c13 {color: #f6f;}
+.irc-c14 {color: #999;}
+.irc-c15 {color: #ccc;}
+
+/* IRC Formatting */
+.irc-normal { font-weight: normal; text-decoration: none; color: #000; }
+.irc-bold { font-weight: bold; }
+.irc-underline { text-decoration: underline; }
+.irc-italic { font-style: italic; }
+
+/* Add padding to main elements for side menu */
+main, footer {
+    padding-left: 240px;
+}
+header nav .nav-wrapper {
+    padding-left: 255px;
+}
+@media only screen and (max-width : 992px) {
+    header nav .nav-wrapper, main, footer {
+        padding-left: 0;
+    }
+}
+
+/* Sidebar Items */
+#app-nav-side,
+#app-nav-side > li {
+    background-color: #fff;
+}
+
+#app-nav-side .app-nav-heading:hover {
+    background-color: inherit !important;
+}
+
+#app-nav-side .app-nav-item i {
+    margin-right: 15px;
+}
+
+/* Sidebar Branding */
+#app-nav-side .app-nav-branding:hover {
+    background-color: inherit !important;
+}
+#app-nav-side .app-nav-branding {
+    text-align: center;
+}
+
+#app-nav-side .app-nav-branding .app-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#app-nav-side .app-nav-branding .app-icon {
+    margin-top: 15px;
+}
+#app-nav-side .app-nav-branding .app-icon > i {
+    font-size: 56px;
+}
+
+/* Cards */
+.app-card .app-card-title a {
+    color: #000;
+}
+.app-card .app-card-title .app-card-title-prefix {
+    color: #fff;
+}
+
+/* Card Title Prefix */
+.app-card .app-card-title .app-card-title-prefix {
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    min-width: 38px;
+    min-height: 38px;
+}
+.app-card .app-card-title .app-card-title-prefix.app-prefix-hash {
+    font-size: 24px;
+    letter-spacing: -2px;
+    text-indent: -2px;
+}

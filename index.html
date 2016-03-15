@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="IRCLogViewer">
+<html lang="en" ng-app="IRCLogViewer" ng-controller="PageCtrl">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,12 +20,55 @@
     </head>
     <body>
         <header>
+            <!-- Fixed nav bar -->
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <!-- Left Menu Button -->
+                        <ul class="left hide-on-med-and-up">
+                            <li>
+                                <a href="#!" data-activates="app-nav-side" class="button-collapse">
+                                    <i class="material-icons">menu</i>
+                                </a>
+                            </li>
+                        </ul>
 
+                        <a href="#!" class="brand-logo text-capitalize">{{data.pageTitle}}</a>
+
+                        <!-- Right hand content -->
+                        <ul class="right hide-on-med-and-down">
+                            <!-- Search button -->
+                            <li><a href="#!"><i class="material-icons">search</i></a></li>
+                            <!-- Dropdown menu -->
+                            <li>
+                                <a class="dropdown-button" data-beloworigin="true" data-constrainwidth="false" data-activates="app-header-actions" href="#!">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul id='app-header-actions' class='dropdown-content'>
+                                    <li><a href="#!">Get short link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Side Menu -->
+            <ul id="app-nav-side" class="side-nav fixed app-nav-side">
+                <li class="app-nav-branding">
+                    <a ng-href="./#!/" class="app-icon"><i class="material-icons">message</i></a>
+                    <a ng-href="./#!/" class="app-title">IRC Logs</a>
+                </li>
+                <li class="app-nav-heading">Networks</li>
+                <ng-include ng-controller="NetworksCtrl" src="'templates/menu-networks.html'"></ng-include>
+            </ul>
         </header>
 
+        <!-- Main Content -->
         <main>
             <ng-view></ng-view>
         </main>
+
         <!-- Javascript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>

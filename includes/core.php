@@ -82,7 +82,7 @@
             $Networks[] = array('name'=>$NetworkName);
         }
 
-        return array($Networks);
+        return $Networks;
     }
 
     // Function to get a list of channels for a specific network folder in log directory
